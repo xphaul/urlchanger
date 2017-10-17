@@ -4,7 +4,7 @@
   "description": "A simple Hapi plugin that can change your URL to your desire.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "lab -c -v -L -a code"
   },
   "author": "Paul Gonzales",
   "license": "ISC",
