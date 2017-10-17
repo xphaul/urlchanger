@@ -18,7 +18,7 @@ server.register({
 * `oldUrl` - Your URL you want to change
 * `newUrl` - The new hostname you want to change your old hostname to
 
-## Sending sms message
+## Changing url hostname
 ```js
 request.server.plugins.urlchanger.checkURI((res) => {
     return reply(res);
