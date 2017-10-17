@@ -4,7 +4,7 @@ const urlchanger = require('./lib/index');
 const Hapi = require('hapi');
 const server = new Hapi.Server();
 const url = 'https://www.facebook.com'
-const newHostname = 'twitter.com'
+const newHostname = 'twittwe.com'
 
 server.connection({
     port: '8080'
