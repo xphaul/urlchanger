@@ -8,14 +8,26 @@ server.connection({
     port: '8080'
 });
 
+
 server.route({
-    path: '/{path}',
+    path: '/{path}/{lolol}/{test}',
     method: 'GET',
 
     handler: function (request, reply) {
-        reply('Hello');
+        reply()
     }
 });
+
+
+server.route({
+    path: '/{path}/{test}',
+    method: 'POST',
+
+    handler: function (request, reply) {
+        reply('HELLO')
+    }
+});
+
 
 
 server.register({
@@ -24,8 +36,6 @@ server.register({
         serverOptions: server,
         newHostname: 'twitter.com'
     }
-}, (err) => {
-  console.log('Data: ', err)
 });
 
 

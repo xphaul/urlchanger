@@ -9,12 +9,13 @@
   "author": "Paul Gonzales",
   "license": "ISC",
   "dependencies": {
+    "async": "^2.5.0",
     "code": "^5.1.0",
     "hapi": "^15.2.0",
     "install": "^0.10.1",
     "lab": "^14.3.1",
     "npm": "^5.5.1",
     "url-parse": "^1.1.9",
-    "valid-url": "^1.0.9"
+    "validator": "^9.0.0"
   }
 }
