@@ -10,21 +10,33 @@ server.connection({
 
 
 server.route({
-    path: '/www.facebook.com/lolol/test',
+    path: '/name',
+    method: 'POST',
+
+    handler: function (request, reply) {
+
+        reply('HELLO');
+    }
+});
+
+server.route({
+    path: '/{name}/',
     method: 'GET',
 
     handler: function (request, reply) {
+
         reply('HELLO');
-        console.log(request)
     }
 });
 
 
+
 server.route({
-    path: '/test/test',
+    path: '/{name}/test/test',
     method: 'GET',
 
     handler: function (request, reply) {
+
         reply('HI');
     }
 });
