@@ -5,25 +5,18 @@
 
 ## Usage
 ```js
-const urlchanger = require('urlchanger');
+const Urlchanger = require('urlchanger');
 
 server.register({
-    register: urlchanger,
+    register: Urlchanger,
     options: {
-      oldUrl: url,
-      newUrl: newHostname
+        serverOptions: server,
+        newHostname: 'twitter.com'
     }
 });
 ```
-* `oldUrl` - Your URL you want to change
-* `newUrl` - The new hostname you want to change your old hostname to
-
-## Changing url hostname
-```js
-request.server.plugins.urlchanger.checkURI((res) => {
-    return reply(res);
-});
-```
+* `serverOptions` - Passing the instance of server to the plugin
+* `newHostname` - The new hostname you want to change your URL to
 
 ## Contributing
 * Include 100% test coverage.
